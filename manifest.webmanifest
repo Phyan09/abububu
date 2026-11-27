@@ -1,0 +1,15 @@
+{
+  "name": "阿布布布",
+  "short_name": "阿布布布",
+  "description": "观测伤害，精确推断洛克王国奇遇/异色精灵性格",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3e2b0",
+  "theme_color": "#e6b85c",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

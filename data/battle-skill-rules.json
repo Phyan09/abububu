@@ -1,0 +1,552 @@
+{
+  "7020450": {
+    "MultiHit": false,
+    "CounterId": 7020451,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "3",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7020460": {
+    "MultiHit": true,
+    "CounterId": 7020461,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7020470": {
+    "MultiHit": true,
+    "CounterId": 7020471,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7020480": {
+    "MultiHit": true
+  },
+  "7020490": {
+    "MultiHit": false,
+    "CounterId": 7020491,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "3",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7020500": {
+    "MultiHit": true
+  },
+  "7020510": {
+    "MultiHit": true
+  },
+  "7020520": {
+    "MultiHit": false,
+    "CounterId": 7020521,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7020890": {
+    "MultiHit": true
+  },
+  "7020920": {
+    "MultiHit": true
+  },
+  "7021140": {
+    "MultiHit": true
+  },
+  "7021230": {
+    "MultiHit": false,
+    "CounterId": 7021231,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7030190": {
+    "MultiHit": true
+  },
+  "7030420": {
+    "MultiHit": true
+  },
+  "7030450": {
+    "MultiHit": true
+  },
+  "7030530": {
+    "MultiHit": false,
+    "CounterId": 7030531,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7030580": {
+    "MultiHit": false,
+    "CounterId": 7030581,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7030610": {
+    "MultiHit": false,
+    "FixedOrdinaryPower": true
+  },
+  "7030640": {
+    "MultiHit": true
+  },
+  "7040180": {
+    "MultiHit": false,
+    "CounterId": 7040181,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "4",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7040190": {
+    "MultiHit": true
+  },
+  "7040220": {
+    "MultiHit": false,
+    "CounterId": 7040221,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7040230": {
+    "MultiHit": true
+  },
+  "7040350": {
+    "MultiHit": true
+  },
+  "7040380": {
+    "MultiHit": false,
+    "CounterId": 7040381,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7050200": {
+    "MultiHit": false,
+    "CounterId": 7050201,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7050210": {
+    "MultiHit": false,
+    "CounterId": 7050211,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7050350": {
+    "MultiHit": true
+  },
+  "7050480": {
+    "MultiHit": true
+  },
+  "7060170": {
+    "MultiHit": true
+  },
+  "7060260": {
+    "MultiHit": false,
+    "CounterId": 7060261,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7070120": {
+    "MultiHit": true
+  },
+  "7070240": {
+    "MultiHit": false,
+    "CounterId": 7070241,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7080130": {
+    "MultiHit": false,
+    "CounterId": 7080131,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7080160": {
+    "MultiHit": false,
+    "CounterId": 7080161,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7080290": {
+    "MultiHit": true
+  },
+  "7080330": {
+    "MultiHit": false,
+    "CounterId": 7080331,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7090130": {
+    "MultiHit": false,
+    "CounterId": 7090131,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7090140": {
+    "MultiHit": false,
+    "CounterId": 7090141,
+    "CounterDamageRule": 29,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7090260": {
+    "MultiHit": true
+  },
+  "7090270": {
+    "MultiHit": false,
+    "CounterId": 7090271,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7090440": {
+    "MultiHit": false,
+    "CounterId": 7090441,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7100130": {
+    "MultiHit": false,
+    "CounterId": 7100131,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7100200": {
+    "MultiHit": false,
+    "CounterId": 7100201,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7100390": {
+    "MultiHit": true
+  },
+  "7110210": {
+    "MultiHit": true
+  },
+  "7110220": {
+    "MultiHit": true
+  },
+  "7110390": {
+    "MultiHit": false,
+    "CounterId": 7110391,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7120080": {
+    "MultiHit": true
+  },
+  "7120090": {
+    "MultiHit": false,
+    "CounterId": 7120091,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7120220": {
+    "MultiHit": false,
+    "CounterId": 7120221,
+    "CounterDamageRule": 19,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7120280": {
+    "MultiHit": true
+  },
+  "7130100": {
+    "MultiHit": true
+  },
+  "7130120": {
+    "MultiHit": true
+  },
+  "7130130": {
+    "MultiHit": true
+  },
+  "7130150": {
+    "MultiHit": false,
+    "CounterId": 7130151,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": true,
+    "SelfDamageWithoutCounter": false
+  },
+  "7130160": {
+    "MultiHit": true
+  },
+  "7130250": {
+    "MultiHit": true
+  },
+  "7130290": {
+    "MultiHit": false,
+    "CounterId": 7130291,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140060": {
+    "MultiHit": false,
+    "CounterId": 7140061,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140070": {
+    "MultiHit": true,
+    "CounterId": 7140071,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140080": {
+    "MultiHit": false,
+    "CounterId": 7140081,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140090": {
+    "MultiHit": false,
+    "CounterId": 7140091,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140100": {
+    "MultiHit": true
+  },
+  "7140120": {
+    "MultiHit": false,
+    "CounterId": 7140121,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "10",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140130": {
+    "MultiHit": false,
+    "CounterId": 7140131,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140220": {
+    "MultiHit": false,
+    "CounterId": 7140221,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "5",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7140230": {
+    "MultiHit": true
+  },
+  "7140270": {
+    "MultiHit": true
+  },
+  "7140340": {
+    "MultiHit": false,
+    "CounterId": 7140341,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 140,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7150050": {
+    "MultiHit": true
+  },
+  "7150090": {
+    "MultiHit": true
+  },
+  "7150110": {
+    "MultiHit": false,
+    "CounterId": 7150111,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "3/2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7150200": {
+    "MultiHit": false,
+    "CounterId": 7150201,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7150360": {
+    "MultiHit": true
+  },
+  "7150380": {
+    "MultiHit": true
+  },
+  "7150400": {
+    "MultiHit": true
+  },
+  "7160250": {
+    "MultiHit": true
+  },
+  "7160280": {
+    "MultiHit": true
+  },
+  "7170100": {
+    "MultiHit": false,
+    "CounterId": 7170101,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7170210": {
+    "MultiHit": true
+  },
+  "7170230": {
+    "MultiHit": true
+  },
+  "7170380": {
+    "MultiHit": true
+  },
+  "7180100": {
+    "MultiHit": false,
+    "CounterId": 7180101,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7180110": {
+    "MultiHit": true
+  },
+  "7180120": {
+    "MultiHit": false,
+    "CounterId": 7180121,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "2",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7180140": {
+    "MultiHit": false,
+    "CounterId": 7180141,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 120,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": true
+  },
+  "7180260": {
+    "MultiHit": true
+  },
+  "7180290": {
+    "MultiHit": false,
+    "CounterId": 7180291,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7180340": {
+    "MultiHit": true
+  },
+  "7190260": {
+    "MultiHit": true
+  },
+  "7190270": {
+    "MultiHit": false,
+    "CounterId": 7190271,
+    "CounterDamageRule": 0,
+    "CounterMultiplier": "1",
+    "CounterAddition": 0,
+    "CounterIgnoresResistance": false,
+    "SelfDamageWithoutCounter": false
+  },
+  "7190380": {
+    "MultiHit": true
+  }
+}

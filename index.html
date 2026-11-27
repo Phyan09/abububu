@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffd041" />
+  <title>阿布布布</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23ffd041' stroke='%23b5762b' stroke-width='5'/%3E%3Cpath d='M32 13l6.2 12.6 13.8 2-10 9.7 2.4 13.8-12.4-6.5-12.4 6.5 2.4-13.8-10-9.7 13.8-2z' fill='%23fffdf6'/%3E%3C/svg%3E" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="css/style.css?v=126" />
+</head>
+<body>
+  <header class="topbar">
+    <h1><span data-icon="sparkle" class="ico"></span>阿布布布<span data-icon="wand" class="ico"></span></h1>
+    <p class="subtitle"><span data-icon="moon" class="ico"></span>观测伤害 · 精确推断奇遇/异色精灵性格</p>
+  </header>
+
+  <main class="container">
+    <!-- 目标精灵 -->
+    <section class="card card-orange">
+      <h2 class="card-title"><span data-icon="ball" class="ico"></span>目标精灵</h2>
+      <button id="pickSpecies" class="species-picker">
+        <span id="speciesLabel" class="sp-placeholder">点击选择精灵</span>
+        <span class="chev">›</span>
+      </button>
+      <div id="speciesMeta" class="species-meta" hidden></div>
+      <div class="grid-2">
+        <label class="field">
+          <span>等级 · 敌方</span>
+          <input id="level" type="number" inputmode="numeric" min="1" max="100" placeholder="填写等级" />
+        </label>
+        <label class="field">
+          <span>等级 · 我方</span>
+          <input id="ownLevel" type="number" inputmode="numeric" min="1" max="100" value="60" />
+        </label>
+      </div>
+      <label class="field">
+        <span>生命模型 · 敌方</span>
+        <select id="hpModel">
+          <option value="EncounterPlus22">奇遇（破盾前）</option>
+        </select>
+      </label>
+    </section>
+
+    <!-- 测试数据：默认不显示卡片，只保留下方“新增观测数据”按钮 -->
+    <section class="obs-zone" id="obsCard">
+      <div id="obsList"></div>
+      <p id="obsEmpty" class="obs-empty">还没有测试数据，点下方“+ 新增观测数据”录入一次观测。</p>
+      <button id="addObs" class="btn-add-obs" type="button">
+        <span class="add-obs-plus">+</span> 新增观测数据
+      </button>
+    </section>
+
+    <!-- 结果 -->
+    <section class="card result-card card-teal">
+      <div class="card-title-row">
+        <h2 class="card-title"><span data-icon="scroll" class="ico"></span>求解结果</h2>
+        <button id="calcBtn" class="btn-calc" type="button" disabled>计算</button>
+      </div>
+      <div id="result"></div>
+    </section>
+
+    <footer class="footnote">
+      <p class="foot-note-text">基于公开数据与精确有理数算法的独立实现，仅供个人学习使用。</p>
+      <div id="updateToast" class="update-toast" hidden></div>
+      <div class="foot-actions">
+        <button id="checkUpdate" class="update-btn" type="button">
+          <span data-icon="refresh" class="ub-ico"></span>检查更新
+        </button>
+        <a id="wikiLink" class="wiki-btn"
+           href="https://wiki.biligame.com/nrc/%E9%A6%96%E9%A1%B5"
+           target="_blank" rel="noopener">WiKi</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- 底部页面切换栏 -->
+  <nav class="tabbar">
+    <div id="tabScroller" class="tab-scroller"></div>
+    <button id="addPage" class="tab-add" aria-label="新建计算器">＋</button>
+  </nav>
+
+  <!-- 精灵选择弹窗 -->
+  <div id="speciesModal" class="modal" hidden>
+    <div class="modal-box">
+      <div class="modal-head">
+        <input id="speciesSearch" type="search" placeholder="搜索精灵名称或编号" />
+        <button id="speciesClose" class="btn-mini">关闭</button>
+      </div>
+      <div id="speciesResults" class="modal-list"></div>
+    </div>
+  </div>
+
+  <!-- 页面管理弹窗 -->
+  <div id="pageModal" class="modal" hidden>
+    <div class="modal-box modal-box-sm">
+      <div class="modal-head">
+        <strong><span data-icon="scroll" class="ico"></span>管理计算器</strong>
+        <button id="pageClose" class="btn-mini">关闭</button>
+      </div>
+      <div class="modal-pad">
+        <label class="field"><span>名称</span>
+          <input id="pageNameInput" type="text" maxlength="20" />
+        </label>
+        <div class="modal-actions">
+          <button id="pageDuplicate" class="btn-ghost">复制一份</button>
+          <button id="pageDelete" class="btn-danger">删除此计算器</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 已有测试数据时换精灵：新建计算器确认 -->
+  <div id="newCalcModal" class="modal modal-center" hidden>
+    <div class="modal-box modal-box-sm confirm-box">
+      <p class="confirm-text">当前计算器已有测试数据，是否新建计算器？</p>
+      <div class="modal-actions">
+        <button id="newCalcCreate" class="btn-confirm">创建</button>
+        <button id="newCalcCancel" class="btn-ghost">取消</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 系别选择：圆形图标网格（照搬图二） -->
+  <div id="elementModal" class="modal modal-center" hidden>
+    <div class="modal-box modal-box-sm element-modal-box">
+      <div class="modal-head">
+        <strong class="element-modal-title">系别</strong>
+        <button id="elementClose" class="btn-mini">关闭</button>
+      </div>
+      <div id="elementGrid" class="element-grid"></div>
+    </div>
+  </div>
+
+  <!-- 异色恢复拦截 -->
+  <div id="shinyBlockModal" class="modal modal-center" hidden>
+    <div class="modal-box modal-box-sm confirm-box">
+      <p id="shinyBlockText" class="confirm-text">当前已存在异色测试数据，请删除所有数据后重试</p>
+      <div class="modal-actions">
+        <button id="shinyBlockOk" class="btn-confirm">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 未选目标精灵时新增观测拦截 -->
+  <div id="needSpeciesModal" class="modal modal-center" hidden>
+    <div class="modal-box modal-box-sm confirm-box">
+      <p class="confirm-text">请先选择目标精灵</p>
+      <div class="modal-actions">
+        <button id="needSpeciesOk" class="btn-confirm">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 骰子效果选择 -->
+  <div id="diceModal" class="modal modal-center" hidden>
+    <div class="modal-box dice-modal-box">
+      <div class="modal-head">
+        <strong id="diceModalTitle">骰子效果 · 进攻方</strong>
+        <button id="diceClose" class="btn-mini">关闭</button>
+      </div>
+      <p class="dice-modal-hint">只列改动攻 / 防 / 威力的骰面（克制、抵抗、强击、生息等在其他项处理）</p>
+      <div id="diceGrid" class="dice-grid"></div>
+    </div>
+  </div>
+
+  <!-- 我方觉醒星级选择 -->
+  <div id="awPickModal" class="modal modal-center" hidden>
+    <div class="modal-box aw-pick-box">
+      <div class="modal-head">
+        <strong class="aw-pick-title"><span data-icon="sparkle" class="ico"></span>我方觉醒星级</strong>
+        <button id="awPickClose" class="btn-mini">关闭</button>
+      </div>
+      <p class="aw-pick-hint">精灵五星级后的觉醒等级 · 0 表示尚未觉醒</p>
+      <div id="awPickGrid" class="aw-pick-grid"></div>
+      <p class="aw-pick-note">官方口径：每觉醒一次 +45% 系别极化（克制增伤）与 +45% 系别钝化（被克减伤）。克制时伤害 ×(1+我方星级系数)，被克制时 ×1/(1+我方星级系数)；双方都有觉醒则按两者比值结算，整体封顶 ×1.8、封底 ×0.6。以上按敌方无钝化计算，敌方带 45% 钝化（命定花种 / 领域试炼）时要到 4 星才封顶。本系技能另按 1.25 + 0.15×星级 结算（0~5 星 = +25% ~ +100%）。</p>
+    </div>
+  </div>
+
+  <!-- 检查更新结果 -->
+  <div id="updateModal" class="modal modal-center" hidden>
+    <div class="modal-box modal-box-sm confirm-box">
+      <p class="confirm-text" id="updateText">当前已经是最新版本</p>
+      <p class="update-sub" id="updateSub"></p>
+      <div class="modal-actions" id="updateActions"></div>
+    </div>
+  </div>
+
+  <!-- 觉醒未填拦截 -->
+  <div id="awakenModal" class="modal modal-center" hidden>
+    <div class="modal-box modal-box-sm confirm-box">
+      <p class="confirm-text">请填写精灵觉醒等级</p>
+      <div class="modal-actions">
+        <button id="awakenOk" class="btn-confirm">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js?v=126"></script>
+</body>
+</html>
